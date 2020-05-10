@@ -1,0 +1,8 @@
+version: '3'
+services: 
+  openapi-generator:
+    image: openapitools/openapi-generator-cli
+    command: generate -i /local/ginServer.yml -g go-gin-server -o /project/ -c /project/config/application.config.json -t /local/codegen/go-gin
+    volumes:
+      - ./openapi-practice:/local
+      - .:/project

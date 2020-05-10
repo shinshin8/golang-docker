@@ -1,0 +1,6 @@
+api
+.openapi-generator
+*.exes
+!.gitkeep
+temp.json
+.idea
